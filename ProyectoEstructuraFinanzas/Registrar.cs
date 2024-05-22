@@ -78,9 +78,17 @@ namespace ProyectoEstructuraFinanzas
             File.WriteAllText(jsonFilePath, jsonString);
 
             MessageBox.Show("Registro guardado exitosamente.");
+            txtDescripcion.Clear();
+            cmbCategoria.Items.Clear();
+            txtMonto.Clear();
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMonto_TextChanged(object sender, EventArgs e)
         {
 
         }
