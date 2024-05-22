@@ -163,6 +163,26 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6f1a9f9d0b98384d9ae0e57c1428e67f {
+            get {
+                object obj = ResourceManager.GetObject("_6f1a9f9d0b98384d9ae0e57c1428e67f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _72dad3106791474669b168217bc41c0c {
+            get {
+                object obj = ResourceManager.GetObject("_72dad3106791474669b168217bc41c0c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap casa {
             get {
                 object obj = ResourceManager.GetObject("casa", resourceCulture);
@@ -266,6 +286,56 @@ namespace ProyectoEstructuraFinanzas.Properties {
         internal static System.Drawing.Bitmap grafico_de_barras__1_ {
             get {
                 object obj = ResourceManager.GetObject("grafico_de_barras__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardar_icono_silueta {
+            get {
+                object obj = ResourceManager.GetObject("guardar_icono_silueta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monto {
+            get {
+                object obj = ResourceManager.GetObject("monto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap producto_o_servicio {
+            get {
+                object obj = ResourceManager.GetObject("producto_o_servicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registrooooo {
+            get {
+                object obj = ResourceManager.GetObject("registrooooo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap safsadfsadfdsafsda {
+            get {
+                object obj = ResourceManager.GetObject("safsadfsadfdsafsda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

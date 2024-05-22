@@ -79,5 +79,20 @@ namespace ProyectoEstructuraFinanzas
             var loginForm = new Form1();
             loginForm.Show();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

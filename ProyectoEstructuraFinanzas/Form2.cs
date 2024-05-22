@@ -16,18 +16,20 @@ namespace ProyectoEstructuraFinanzas
         public Form2()
         {
             InitializeComponent();
-            Timer timer = new Timer();
-            timer.Interval = 1000; // 1000 ms = 1 segundo
-            timer.Tick += new EventHandler(ActualizarHoraYFecha);
-            timer.Start();
+            //labelHora.BackColor = Color.Transparent;
+                      
+            //Timer timer = new Timer();
+            //timer.Interval = 1000; // 1000 ms = 1 segundo
+            //timer.Tick += new EventHandler(ActualizarHoraYFecha);
+            //timer.Start();
         }
-        private void ActualizarHoraYFecha(object sender, EventArgs e)
-        {
-            // Actualiza el label de la hora
-            labelHora.Text = DateTime.Now.ToString("HH:mm:ss");
-            // Actualiza el label de la fecha
-            labelFecha.Text = CapitalizeFirstLetter(DateTime.Now.ToString("dddd, MMMM dd, yyyy", new CultureInfo("es-ES")));
-        }
+        //private void ActualizarHoraYFecha(object sender, EventArgs e)
+        //{
+        //    // Actualiza el label de la hora
+        //    labelHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        //    // Actualiza el label de la fecha
+        //    labelFecha.Text = CapitalizeFirstLetter(DateTime.Now.ToString("dddd, MMMM dd, yyyy", new CultureInfo("es-ES")));
+        //}
 
         private string CapitalizeFirstLetter(string input)
         {
@@ -111,6 +113,11 @@ namespace ProyectoEstructuraFinanzas
         }
 
         private void panelHijo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
         {
 
         }

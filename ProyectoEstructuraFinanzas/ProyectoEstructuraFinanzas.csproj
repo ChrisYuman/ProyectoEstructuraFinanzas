@@ -280,5 +280,23 @@
   <ItemGroup>
     <None Include="Resources\22385c37bb0147068dd0595dc239ce1a%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoría.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto o servicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72dad3106791474669b168217bc41c0c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-icono-silueta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registrooooo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

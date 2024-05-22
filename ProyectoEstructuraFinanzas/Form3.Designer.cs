@@ -33,10 +33,13 @@
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtConfirmar = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(216)))), ((int)(((byte)(218)))));
             this.guna2Button2.BorderRadius = 10;
             this.guna2Button2.BorderThickness = 2;
@@ -47,7 +50,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(103, 341);
+            this.guna2Button2.Location = new System.Drawing.Point(267, 385);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(129, 43);
@@ -57,7 +60,8 @@
             // 
             // guna2Button3
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(216)))), ((int)(((byte)(218)))));
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Button3.BorderRadius = 10;
             this.guna2Button3.BorderThickness = 2;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -67,7 +71,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(257, 341);
+            this.guna2Button3.Location = new System.Drawing.Point(421, 385);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(129, 43);
@@ -78,6 +82,8 @@
             // txtUsuario
             // 
             this.txtUsuario.Animated = true;
+            this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsuario.BorderColor = System.Drawing.Color.Transparent;
             this.txtUsuario.BorderRadius = 8;
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.DefaultText = "Email";
@@ -88,19 +94,23 @@
             this.txtUsuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsuario.ForeColor = System.Drawing.Color.Transparent;
             this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.Location = new System.Drawing.Point(103, 109);
+            this.txtUsuario.Location = new System.Drawing.Point(267, 123);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.PlaceholderText = "";
             this.txtUsuario.SelectedText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(267, 44);
+            this.txtUsuario.Size = new System.Drawing.Size(283, 44);
             this.txtUsuario.TabIndex = 7;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtContraseña
             // 
             this.txtContraseña.Animated = true;
+            this.txtContraseña.BackColor = System.Drawing.Color.Transparent;
+            this.txtContraseña.BorderColor = System.Drawing.Color.Transparent;
             this.txtContraseña.BorderRadius = 8;
             this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtContraseña.DefaultText = "Password";
@@ -111,20 +121,23 @@
             this.txtContraseña.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.txtContraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseña.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContraseña.ForeColor = System.Drawing.Color.Transparent;
             this.txtContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContraseña.Location = new System.Drawing.Point(103, 182);
+            this.txtContraseña.Location = new System.Drawing.Point(267, 196);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '●';
             this.txtContraseña.PlaceholderText = "";
             this.txtContraseña.SelectedText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(267, 46);
+            this.txtContraseña.Size = new System.Drawing.Size(283, 46);
             this.txtContraseña.TabIndex = 8;
             this.txtContraseña.UseSystemPasswordChar = true;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // txtConfirmar
             // 
             this.txtConfirmar.Animated = true;
+            this.txtConfirmar.BackColor = System.Drawing.Color.Transparent;
             this.txtConfirmar.BorderRadius = 8;
             this.txtConfirmar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirmar.DefaultText = "Password";
@@ -136,29 +149,47 @@
             this.txtConfirmar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtConfirmar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConfirmar.Location = new System.Drawing.Point(103, 267);
+            this.txtConfirmar.Location = new System.Drawing.Point(267, 281);
             this.txtConfirmar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.PasswordChar = '●';
             this.txtConfirmar.PlaceholderText = "";
             this.txtConfirmar.SelectedText = "";
-            this.txtConfirmar.Size = new System.Drawing.Size(267, 46);
+            this.txtConfirmar.Size = new System.Drawing.Size(283, 46);
             this.txtConfirmar.TabIndex = 9;
             this.txtConfirmar.UseSystemPasswordChar = true;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.registrooooo;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(202, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(434, 463);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 10;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.WhatsApp_Image_2024_05_21_at_10_04_47_PM;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(888, 505);
             this.Controls.Add(this.txtConfirmar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,5 +201,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
         private Guna.UI2.WinForms.Guna2TextBox txtContraseña;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmar;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

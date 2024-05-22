@@ -124,6 +124,9 @@
   <data name="casa__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="categoría" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\categoría.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cerrar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +150,18 @@
   </data>
   <data name="grafico_de_barras__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grafico-de-barras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardar_icono_silueta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar-icono-silueta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="producto_o_servicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\producto o servicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registrooooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registrooooo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="safsadfsadfdsafsda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\safsadfsadfdsafsda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -210,5 +225,8 @@
   </data>
   <data name="_6f1a9f9d0b98384d9ae0e57c1428e67f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6f1a9f9d0b98384d9ae0e57c1428e67f.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_72dad3106791474669b168217bc41c0c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\72dad3106791474669b168217bc41c0c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

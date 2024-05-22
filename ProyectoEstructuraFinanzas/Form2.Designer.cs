@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -44,8 +43,6 @@
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.panelHijo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.labelFecha = new System.Windows.Forms.Label();
-            this.labelHora = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.panelHijo.SuspendLayout();
@@ -60,7 +57,6 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button7);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button5);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button3);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button2);
@@ -71,9 +67,9 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DarkCyan;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(166, 526);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(221, 647);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
@@ -93,37 +89,14 @@
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.cerrar_sesion;
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 453);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 558);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button7.Size = new System.Drawing.Size(221, 46);
             this.guna2Button7.TabIndex = 6;
             this.guna2Button7.Text = "Cerrar Sesion";
             this.guna2Button7.UseTransparentBackground = true;
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderRadius = 8;
-            this.guna2Transition1.SetDecoration(this.guna2Button5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 238);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(166, 37);
-            this.guna2Button5.TabIndex = 4;
-            this.guna2Button5.Text = "Prueba";
-            this.guna2Button5.UseTransparentBackground = true;
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
             // 
@@ -141,13 +114,14 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__1_;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 197);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 295);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button4.Size = new System.Drawing.Size(221, 46);
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Planificacion";
             this.guna2Button4.UseTransparentBackground = true;
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 
@@ -165,10 +139,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.grafico_de_barras__1_;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 155);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 244);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button3.Size = new System.Drawing.Size(221, 46);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Seguimiento";
             this.guna2Button3.UseTransparentBackground = true;
@@ -190,10 +164,10 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 114);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 193);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button2.Size = new System.Drawing.Size(221, 46);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Registrar";
             this.guna2Button2.UseTransparentBackground = true;
@@ -202,67 +176,65 @@
             // guna2Panel1
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Panel1.Location = new System.Drawing.Point(166, 37);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(221, 46);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(14, 453);
+            this.guna2Panel1.Size = new System.Drawing.Size(19, 558);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2Panel2
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(166, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel2.Location = new System.Drawing.Point(221, 0);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(684, 11);
+            this.guna2Panel2.Size = new System.Drawing.Size(912, 14);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2Panel3
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel3.Location = new System.Drawing.Point(166, 515);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel3.Location = new System.Drawing.Point(221, 633);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(684, 11);
+            this.guna2Panel3.Size = new System.Drawing.Size(912, 14);
             this.guna2Panel3.TabIndex = 3;
             // 
             // guna2Transition1
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation5;
             // 
             // panelHijo
             // 
             this.panelHijo.BackColor = System.Drawing.Color.Transparent;
             this.panelHijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelHijo.Controls.Add(this.labelHora);
             this.panelHijo.Controls.Add(this.guna2PictureBox1);
-            this.panelHijo.Controls.Add(this.labelFecha);
             this.panelHijo.Controls.Add(this.guna2PictureBox2);
             this.guna2Transition1.SetDecoration(this.panelHijo, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelHijo.FillColor = System.Drawing.Color.Transparent;
-            this.panelHijo.Location = new System.Drawing.Point(166, 11);
-            this.panelHijo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelHijo.Location = new System.Drawing.Point(221, 14);
+            this.panelHijo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelHijo.Name = "panelHijo";
-            this.panelHijo.Size = new System.Drawing.Size(682, 504);
+            this.panelHijo.Size = new System.Drawing.Size(909, 620);
             this.panelHijo.TabIndex = 9;
             this.panelHijo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHijo_Paint);
             // 
@@ -271,56 +243,36 @@
             this.guna2Transition1.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._22385c37bb0147068dd0595dc239ce1a_1_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(234, 103);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(307, 127);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(208, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(277, 246);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // labelFecha
-            // 
-            this.labelFecha.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.labelFecha, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.labelFecha.Font = new System.Drawing.Font("Sans Serif Collection", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(186)))), ((int)(((byte)(209)))));
-            this.labelFecha.Location = new System.Drawing.Point(227, 332);
-            this.labelFecha.Name = "labelFecha";
-            this.labelFecha.Size = new System.Drawing.Size(0, 32);
-            this.labelFecha.TabIndex = 2;
-            // 
-            // labelHora
-            // 
-            this.labelHora.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.labelHora, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.labelHora.Font = new System.Drawing.Font("Monospac821 BT", 32F, System.Drawing.FontStyle.Bold);
-            this.labelHora.ForeColor = System.Drawing.Color.White;
-            this.labelHora.Location = new System.Drawing.Point(225, 252);
-            this.labelHora.Name = "labelHora";
-            this.labelHora.Size = new System.Drawing.Size(0, 51);
-            this.labelHora.TabIndex = 1;
             // 
             // guna2PictureBox2
             // 
             this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._4Cb2;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(38, -41);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(26, -111);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(597, 574);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(831, 855);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 4;
             this.guna2PictureBox2.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chartreuse;
             this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.Screenshot_2024_05_21_232545;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(850, 526);
+            this.ClientSize = new System.Drawing.Size(1133, 647);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
@@ -330,14 +282,13 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Chartreuse;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.TransparencyKey = System.Drawing.Color.Chartreuse;
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.panelHijo.ResumeLayout(false);
-            this.panelHijo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -356,10 +307,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel panelHijo;
-        private System.Windows.Forms.Label labelHora;
-        private System.Windows.Forms.Label labelFecha;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
