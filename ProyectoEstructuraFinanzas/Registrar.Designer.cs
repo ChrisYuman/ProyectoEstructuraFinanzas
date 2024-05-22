@@ -137,7 +137,7 @@
             this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.guardar_icono_silueta;
+            this.btnGuardar.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.btnGuardar.Location = new System.Drawing.Point(391, 474);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(180, 45);
@@ -148,7 +148,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._72dad3106791474669b168217bc41c0c;
+            this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(238, 18);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -161,7 +161,7 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.producto_o_servicio;
+            this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(90, 157);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -174,7 +174,7 @@
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.categoría;
+            this.guna2PictureBox3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(403, 157);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
@@ -187,7 +187,7 @@
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox4.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.monto;
+            this.guna2PictureBox4.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(687, 157);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
