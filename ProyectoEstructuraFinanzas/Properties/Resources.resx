@@ -160,6 +160,12 @@
   <data name="verificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\verificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp_Image_2024_05_21_at_10_04_47_PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2024-05-21 at 10.04.47 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp_Image_2024_05_21_at_10_04_58_PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2024-05-21 at 10.04.58 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_0d0121d4_72da_4fd4_b626_312e5dc3c1f6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\_0d0121d4-72da-4fd4-b626-312e5dc3c1f6.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -79,6 +79,11 @@ namespace ProyectoEstructuraFinanzas
 
             MessageBox.Show("Registro guardado exitosamente.");
         }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Registro

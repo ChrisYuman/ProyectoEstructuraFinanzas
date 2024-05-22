@@ -249,5 +249,25 @@ namespace ProyectoEstructuraFinanzas.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_21_at_10_04_47_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024_05_21_at_10_04_47_PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_21_at_10_04_58_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024_05_21_at_10_04_58_PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

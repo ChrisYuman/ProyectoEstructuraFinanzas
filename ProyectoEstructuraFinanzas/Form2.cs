@@ -36,16 +36,14 @@ namespace ProyectoEstructuraFinanzas
             if(!bunifuCards2.Visible)
             {
                 guna2Transition1.ShowSync(bunifuCards2);
-                guna2Transition1.ShowSync(bunifuCards3);
-                guna2Transition1.ShowSync(bunifuCards4);
+             
 
 
             }
             else
             {
                 guna2Transition1.HideSync(bunifuCards2);
-                guna2Transition1.HideSync(bunifuCards3);
-                guna2Transition1.HideSync(bunifuCards4);
+            
             }
         }
         private Form activeForm = null;
