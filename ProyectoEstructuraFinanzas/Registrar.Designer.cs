@@ -51,7 +51,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(23, 37);
+            this.lblTitle.Location = new System.Drawing.Point(23, 35);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(188, 16);
             this.lblTitle.TabIndex = 2;
@@ -59,22 +59,26 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Animated = true;
+            this.txtDescripcion.BorderColor = System.Drawing.Color.Transparent;
             this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcion.DefaultText = "";
             this.txtDescripcion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtDescripcion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDescripcion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDescripcion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDescripcion.FillColor = System.Drawing.Color.DimGray;
             this.txtDescripcion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDescripcion.ForeColor = System.Drawing.Color.Gray;
             this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDescripcion.Location = new System.Drawing.Point(286, 73);
+            this.txtDescripcion.Location = new System.Drawing.Point(26, 98);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.PlaceholderText = "Descripción";
             this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.Size = new System.Drawing.Size(514, 101);
+            this.txtDescripcion.Size = new System.Drawing.Size(266, 51);
             this.txtDescripcion.TabIndex = 3;
             // 
             // cmbCategoria
@@ -87,9 +91,9 @@
             this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCategoria.ItemHeight = 30;
-            this.cmbCategoria.Location = new System.Drawing.Point(286, 208);
+            this.cmbCategoria.Location = new System.Drawing.Point(26, 204);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(204, 36);
+            this.cmbCategoria.Size = new System.Drawing.Size(210, 36);
             this.cmbCategoria.TabIndex = 4;
             // 
             // txtMonto
@@ -103,13 +107,13 @@
             this.txtMonto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMonto.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMonto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMonto.Location = new System.Drawing.Point(286, 276);
+            this.txtMonto.Location = new System.Drawing.Point(26, 293);
             this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.PasswordChar = '\0';
             this.txtMonto.PlaceholderText = "Monto";
             this.txtMonto.SelectedText = "";
-            this.txtMonto.Size = new System.Drawing.Size(514, 101);
+            this.txtMonto.Size = new System.Drawing.Size(266, 47);
             this.txtMonto.TabIndex = 5;
             // 
             // btnGuardar
@@ -132,6 +136,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.Screenshot_2024_05_20_074522;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(888, 505);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtMonto);
@@ -139,6 +146,7 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.guna2Button1);
+            this.DoubleBuffered = true;
             this.Name = "Registrar";
             this.Text = "Registrar";
             this.Load += new System.EventHandler(this.Registrar_Load);

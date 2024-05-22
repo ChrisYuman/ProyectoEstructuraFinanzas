@@ -43,22 +43,22 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.panelHijo = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.bunifuCards3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.bunifuCards4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panelHijo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.bunifuCards4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.bunifuCards3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -261,74 +261,6 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // bunifuCards3
-            // 
-            this.bunifuCards3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.bunifuCards3.BorderRadius = 5;
-            this.bunifuCards3.BottomSahddow = false;
-            this.bunifuCards3.BottomShadow = false;
-            this.bunifuCards3.color = System.Drawing.Color.Transparent;
-            this.bunifuCards3.Controls.Add(this.guna2PictureBox2);
-            this.guna2Transition1.SetDecoration(this.bunifuCards3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuCards3.IndicatorColor = System.Drawing.Color.Transparent;
-            this.bunifuCards3.LeftSahddow = false;
-            this.bunifuCards3.LeftShadow = false;
-            this.bunifuCards3.Location = new System.Drawing.Point(551, 0);
-            this.bunifuCards3.Name = "bunifuCards3";
-            this.bunifuCards3.RightSahddow = false;
-            this.bunifuCards3.RightShadow = false;
-            this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(259, 130);
-            this.bunifuCards3.TabIndex = 7;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__2_;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(14, 12);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(60, 60);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 2;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // bunifuCards4
-            // 
-            this.bunifuCards4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.bunifuCards4.BorderRadius = 5;
-            this.bunifuCards4.BottomSahddow = false;
-            this.bunifuCards4.BottomShadow = false;
-            this.bunifuCards4.color = System.Drawing.Color.Transparent;
-            this.bunifuCards4.Controls.Add(this.guna2PictureBox3);
-            this.guna2Transition1.SetDecoration(this.bunifuCards4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuCards4.IndicatorColor = System.Drawing.Color.Transparent;
-            this.bunifuCards4.LeftSahddow = false;
-            this.bunifuCards4.LeftShadow = false;
-            this.bunifuCards4.Location = new System.Drawing.Point(829, 0);
-            this.bunifuCards4.Name = "bunifuCards4";
-            this.bunifuCards4.RightSahddow = false;
-            this.bunifuCards4.RightShadow = false;
-            this.bunifuCards4.ShadowDepth = 20;
-            this.bunifuCards4.Size = new System.Drawing.Size(259, 130);
-            this.bunifuCards4.TabIndex = 8;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2PictureBox3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__2_;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(14, 12);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(60, 60);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 3;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            // 
             // guna2Transition1
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
@@ -371,6 +303,74 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__2_;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(14, 12);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(60, 60);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 3;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // bunifuCards4
+            // 
+            this.bunifuCards4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.bunifuCards4.BorderRadius = 5;
+            this.bunifuCards4.BottomSahddow = false;
+            this.bunifuCards4.BottomShadow = false;
+            this.bunifuCards4.color = System.Drawing.Color.Transparent;
+            this.bunifuCards4.Controls.Add(this.guna2PictureBox3);
+            this.guna2Transition1.SetDecoration(this.bunifuCards4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuCards4.IndicatorColor = System.Drawing.Color.Transparent;
+            this.bunifuCards4.LeftSahddow = false;
+            this.bunifuCards4.LeftShadow = false;
+            this.bunifuCards4.Location = new System.Drawing.Point(829, 0);
+            this.bunifuCards4.Name = "bunifuCards4";
+            this.bunifuCards4.RightSahddow = false;
+            this.bunifuCards4.RightShadow = false;
+            this.bunifuCards4.ShadowDepth = 20;
+            this.bunifuCards4.Size = new System.Drawing.Size(259, 130);
+            this.bunifuCards4.TabIndex = 8;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__2_;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(14, 12);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(60, 60);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 2;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // bunifuCards3
+            // 
+            this.bunifuCards3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.bunifuCards3.BorderRadius = 5;
+            this.bunifuCards3.BottomSahddow = false;
+            this.bunifuCards3.BottomShadow = false;
+            this.bunifuCards3.color = System.Drawing.Color.Transparent;
+            this.bunifuCards3.Controls.Add(this.guna2PictureBox2);
+            this.guna2Transition1.SetDecoration(this.bunifuCards3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuCards3.IndicatorColor = System.Drawing.Color.Transparent;
+            this.bunifuCards3.LeftSahddow = false;
+            this.bunifuCards3.LeftShadow = false;
+            this.bunifuCards3.Location = new System.Drawing.Point(551, -1);
+            this.bunifuCards3.Name = "bunifuCards3";
+            this.bunifuCards3.RightSahddow = false;
+            this.bunifuCards3.RightShadow = false;
+            this.bunifuCards3.ShadowDepth = 20;
+            this.bunifuCards3.Size = new System.Drawing.Size(259, 130);
+            this.bunifuCards3.TabIndex = 7;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -397,12 +397,12 @@
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.bunifuCards2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.bunifuCards3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.bunifuCards4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.panelHijo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            this.bunifuCards4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.bunifuCards3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -415,18 +415,18 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards4;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel panelHijo;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }
