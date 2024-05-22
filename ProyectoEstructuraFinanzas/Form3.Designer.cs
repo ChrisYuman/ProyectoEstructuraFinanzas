@@ -34,15 +34,17 @@
             this.txtContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtConfirmar = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Animated = true;
             this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(216)))), ((int)(((byte)(218)))));
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 2;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 8;
+            this.guna2Button2.BorderThickness = 1;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -50,12 +52,13 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(267, 385);
+            this.guna2Button2.Location = new System.Drawing.Point(267, 382);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(129, 43);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "Registrar";
+            this.guna2Button2.UseTransparentBackground = true;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button3
@@ -71,12 +74,13 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(421, 385);
+            this.guna2Button3.Location = new System.Drawing.Point(417, 382);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(129, 43);
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = "Salir";
+            this.guna2Button3.UseTransparentBackground = true;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // txtUsuario
@@ -100,6 +104,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtUsuario.PlaceholderText = "";
             this.txtUsuario.SelectedText = "";
             this.txtUsuario.Size = new System.Drawing.Size(283, 44);
@@ -127,6 +132,7 @@
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '●';
+            this.txtContraseña.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtContraseña.PlaceholderText = "";
             this.txtContraseña.SelectedText = "";
             this.txtContraseña.Size = new System.Drawing.Size(283, 46);
@@ -138,6 +144,7 @@
             // 
             this.txtConfirmar.Animated = true;
             this.txtConfirmar.BackColor = System.Drawing.Color.Transparent;
+            this.txtConfirmar.BorderColor = System.Drawing.Color.Transparent;
             this.txtConfirmar.BorderRadius = 8;
             this.txtConfirmar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirmar.DefaultText = "Password";
@@ -148,11 +155,13 @@
             this.txtConfirmar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
             this.txtConfirmar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtConfirmar.ForeColor = System.Drawing.Color.Transparent;
             this.txtConfirmar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConfirmar.Location = new System.Drawing.Point(267, 281);
+            this.txtConfirmar.Location = new System.Drawing.Point(266, 281);
             this.txtConfirmar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.PasswordChar = '●';
+            this.txtConfirmar.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtConfirmar.PlaceholderText = "";
             this.txtConfirmar.SelectedText = "";
             this.txtConfirmar.Size = new System.Drawing.Size(283, 46);
@@ -164,7 +173,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.registrooooo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(202, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(202, 9);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(434, 463);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,6 +182,17 @@
             this.guna2PictureBox1.UseTransparentBackground = true;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(365, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "REGISTRO";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,6 +200,7 @@
             this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.WhatsApp_Image_2024_05_21_at_10_04_47_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(888, 505);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtConfirmar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
@@ -191,6 +212,7 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -202,5 +224,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtContraseña;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmar;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
