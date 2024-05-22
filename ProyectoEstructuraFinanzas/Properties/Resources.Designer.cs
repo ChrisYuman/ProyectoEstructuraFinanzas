@@ -163,16 +163,6 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _6f1a9f9d0b98384d9ae0e57c1428e67f {
-            get {
-                object obj = ResourceManager.GetObject("_6f1a9f9d0b98384d9ae0e57c1428e67f", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap casa {
             get {
                 object obj = ResourceManager.GetObject("casa", resourceCulture);
@@ -186,6 +176,16 @@ namespace ProyectoEstructuraFinanzas.Properties {
         internal static System.Drawing.Bitmap casa__1_ {
             get {
                 object obj = ResourceManager.GetObject("casa__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap categoría {
+            get {
+                object obj = ResourceManager.GetObject("categoría", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,16 +266,6 @@ namespace ProyectoEstructuraFinanzas.Properties {
         internal static System.Drawing.Bitmap grafico_de_barras__1_ {
             get {
                 object obj = ResourceManager.GetObject("grafico_de_barras__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap safsadfsadfdsafsda {
-            get {
-                object obj = ResourceManager.GetObject("safsadfsadfdsafsda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
