@@ -148,8 +148,17 @@
   <data name="grafico_de_barras__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grafico-de-barras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="safsadfsadfdsafsda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\safsadfsadfdsafsda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Screenshot_2024_05_20_074522" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-05-20 074522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_2024_05_21_223143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-05-21 223143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_2024_05_21_232545" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-05-21 232545.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +175,12 @@
   <data name="WhatsApp_Image_2024_05_21_at_10_04_58_PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2024-05-21 at 10.04.58 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp_Image_2024_05_21_at_23_36_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2024-05-21 at 23.36.12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_0b43f61a8bdd5091da0fd37ddca1a9a3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0b43f61a8bdd5091da0fd37ddca1a9a3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_0d0121d4_72da_4fd4_b626_312e5dc3c1f6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\_0d0121d4-72da-4fd4-b626-312e5dc3c1f6.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,10 +190,25 @@
   <data name="_1bf1cb404e614759b52302f565296e3e__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1bf1cb404e614759b52302f565296e3e (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_22385c37bb0147068dd0595dc239ce1a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\22385c37bb0147068dd0595dc239ce1a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_22385c37bb0147068dd0595dc239ce1a_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\22385c37bb0147068dd0595dc239ce1a(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_23c5ecfc_4c8a_450d_b84e_09af0c6bf8fd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\_23c5ecfc-4c8a-450d-b84e-09af0c6bf8fd.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_4Cb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4Cb2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6154a13b5a3e7c9bff550b0aa880ff2b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6154a13b5a3e7c9bff550b0aa880ff2b.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_62b2cd3e8e514cb69006be0df908d046" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\62b2cd3e8e514cb69006be0df908d046.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6f1a9f9d0b98384d9ae0e57c1428e67f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6f1a9f9d0b98384d9ae0e57c1428e67f.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

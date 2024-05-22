@@ -86,7 +86,7 @@ namespace ProyectoEstructuraFinanzas
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             //cerrar la aplicacion
-
+            Application.Exit();
 
         }
     }

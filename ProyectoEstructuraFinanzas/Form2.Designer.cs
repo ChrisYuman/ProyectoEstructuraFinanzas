@@ -43,14 +43,14 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.panelHijo = new Guna.UI2.WinForms.Guna2Panel();
-            this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelFecha = new System.Windows.Forms.Label();
+            this.labelHora = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.panelHijo.SuspendLayout();
-            this.bunifuCards2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -71,8 +71,9 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DarkCyan;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(222, 648);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(166, 526);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
@@ -92,9 +93,10 @@
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.cerrar_sesion;
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 558);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 453);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(222, 45);
+            this.guna2Button7.Size = new System.Drawing.Size(166, 37);
             this.guna2Button7.TabIndex = 6;
             this.guna2Button7.Text = "Cerrar Sesion";
             this.guna2Button7.UseTransparentBackground = true;
@@ -114,9 +116,10 @@
             this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 293);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 238);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(222, 45);
+            this.guna2Button5.Size = new System.Drawing.Size(166, 37);
             this.guna2Button5.TabIndex = 4;
             this.guna2Button5.Text = "Prueba";
             this.guna2Button5.UseTransparentBackground = true;
@@ -138,9 +141,10 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__1_;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 242);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 197);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(222, 45);
+            this.guna2Button4.Size = new System.Drawing.Size(166, 37);
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Planificacion";
             this.guna2Button4.UseTransparentBackground = true;
@@ -161,9 +165,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.grafico_de_barras__1_;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 191);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 155);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(222, 45);
+            this.guna2Button3.Size = new System.Drawing.Size(166, 37);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Seguimiento";
             this.guna2Button3.UseTransparentBackground = true;
@@ -185,9 +190,10 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 140);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 114);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(222, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(166, 37);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Registrar";
             this.guna2Button2.UseTransparentBackground = true;
@@ -196,27 +202,30 @@
             // guna2Panel1
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Panel1.Location = new System.Drawing.Point(221, 45);
+            this.guna2Panel1.Location = new System.Drawing.Point(166, 37);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(18, 558);
+            this.guna2Panel1.Size = new System.Drawing.Size(14, 453);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2Panel2
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(222, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(166, 0);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(911, 14);
+            this.guna2Panel2.Size = new System.Drawing.Size(684, 11);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2Panel3
             // 
             this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel3.Location = new System.Drawing.Point(222, 634);
+            this.guna2Panel3.Location = new System.Drawing.Point(166, 515);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(911, 14);
+            this.guna2Panel3.Size = new System.Drawing.Size(684, 11);
             this.guna2Panel3.TabIndex = 3;
             // 
             // guna2Transition1
@@ -243,70 +252,75 @@
             // panelHijo
             // 
             this.panelHijo.BackColor = System.Drawing.Color.Transparent;
-            this.panelHijo.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.WhatsApp_Image_2024_05_21_at_10_04_47_PM;
             this.panelHijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelHijo.Controls.Add(this.bunifuCards2);
-            this.panelHijo.Controls.Add(this.pictureBox1);
+            this.panelHijo.Controls.Add(this.labelHora);
+            this.panelHijo.Controls.Add(this.guna2PictureBox1);
+            this.panelHijo.Controls.Add(this.labelFecha);
+            this.panelHijo.Controls.Add(this.guna2PictureBox2);
             this.guna2Transition1.SetDecoration(this.panelHijo, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelHijo.FillColor = System.Drawing.Color.Transparent;
-            this.panelHijo.Location = new System.Drawing.Point(222, 12);
+            this.panelHijo.Location = new System.Drawing.Point(166, 11);
+            this.panelHijo.Margin = new System.Windows.Forms.Padding(2);
             this.panelHijo.Name = "panelHijo";
-            this.panelHijo.Size = new System.Drawing.Size(908, 624);
+            this.panelHijo.Size = new System.Drawing.Size(682, 504);
             this.panelHijo.TabIndex = 9;
-            // 
-            // bunifuCards2
-            // 
-            this.bunifuCards2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.bunifuCards2.BorderRadius = 5;
-            this.bunifuCards2.BottomSahddow = false;
-            this.bunifuCards2.BottomShadow = false;
-            this.bunifuCards2.color = System.Drawing.Color.Transparent;
-            this.bunifuCards2.Controls.Add(this.guna2PictureBox1);
-            this.guna2Transition1.SetDecoration(this.bunifuCards2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuCards2.IndicatorColor = System.Drawing.Color.Transparent;
-            this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.LeftShadow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(13, 350);
-            this.bunifuCards2.Name = "bunifuCards2";
-            this.bunifuCards2.RightSahddow = false;
-            this.bunifuCards2.RightShadow = false;
-            this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(493, 231);
-            this.bunifuCards2.TabIndex = 6;
+            this.panelHijo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHijo_Paint);
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__2_;
+            this.guna2PictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._22385c37bb0147068dd0595dc239ce1a_1_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(234, 103);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(208, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // pictureBox1
+            // labelFecha
             // 
-            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._23c5ecfc_4c8a_450d_b84e_09af0c6bf8fd;
-            this.pictureBox1.Location = new System.Drawing.Point(236, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 251);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.labelFecha.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.labelFecha, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.labelFecha.Font = new System.Drawing.Font("Sans Serif Collection", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(186)))), ((int)(((byte)(209)))));
+            this.labelFecha.Location = new System.Drawing.Point(227, 332);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(0, 32);
+            this.labelFecha.TabIndex = 2;
+            // 
+            // labelHora
+            // 
+            this.labelHora.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.labelHora, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.labelHora.Font = new System.Drawing.Font("Monospac821 BT", 32F, System.Drawing.FontStyle.Bold);
+            this.labelHora.ForeColor = System.Drawing.Color.White;
+            this.labelHora.Location = new System.Drawing.Point(225, 252);
+            this.labelHora.Name = "labelHora";
+            this.labelHora.Size = new System.Drawing.Size(0, 51);
+            this.labelHora.TabIndex = 1;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources._4Cb2;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(38, -41);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(597, 574);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 4;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.Screenshot_2024_05_20_074522;
+            this.BackColor = System.Drawing.Color.Chartreuse;
+            this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.Screenshot_2024_05_21_232545;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1133, 648);
+            this.ClientSize = new System.Drawing.Size(850, 526);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
@@ -314,16 +328,18 @@
             this.Controls.Add(this.panelHijo);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Chartreuse;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.TransparencyKey = System.Drawing.Color.Black;
+            this.TransparencyKey = System.Drawing.Color.Chartreuse;
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.panelHijo.ResumeLayout(false);
-            this.bunifuCards2.ResumeLayout(false);
+            this.panelHijo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,8 +358,9 @@
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel panelHijo;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards2;
+        private System.Windows.Forms.Label labelHora;
+        private System.Windows.Forms.Label labelFecha;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

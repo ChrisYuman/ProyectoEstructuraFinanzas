@@ -250,5 +250,35 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2024-05-21 at 10.04.47 PM.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-21 223143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6f1a9f9d0b98384d9ae0e57c1428e67f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0b43f61a8bdd5091da0fd37ddca1a9a3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6154a13b5a3e7c9bff550b0aa880ff2b.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Cb2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-21 232545.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22385c37bb0147068dd0595dc239ce1a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safsadfsadfdsafsda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-05-21 at 23.36.12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22385c37bb0147068dd0595dc239ce1a%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

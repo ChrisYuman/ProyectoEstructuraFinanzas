@@ -63,6 +63,16 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0b43f61a8bdd5091da0fd37ddca1a9a3 {
+            get {
+                object obj = ResourceManager.GetObject("_0b43f61a8bdd5091da0fd37ddca1a9a3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _0d0121d4_72da_4fd4_b626_312e5dc3c1f6 {
             get {
                 object obj = ResourceManager.GetObject("_0d0121d4_72da_4fd4_b626_312e5dc3c1f6", resourceCulture);
@@ -93,6 +103,26 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _22385c37bb0147068dd0595dc239ce1a {
+            get {
+                object obj = ResourceManager.GetObject("_22385c37bb0147068dd0595dc239ce1a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _22385c37bb0147068dd0595dc239ce1a_1_ {
+            get {
+                object obj = ResourceManager.GetObject("_22385c37bb0147068dd0595dc239ce1a_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _23c5ecfc_4c8a_450d_b84e_09af0c6bf8fd {
             get {
                 object obj = ResourceManager.GetObject("_23c5ecfc_4c8a_450d_b84e_09af0c6bf8fd", resourceCulture);
@@ -103,9 +133,39 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4Cb2 {
+            get {
+                object obj = ResourceManager.GetObject("_4Cb2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6154a13b5a3e7c9bff550b0aa880ff2b {
+            get {
+                object obj = ResourceManager.GetObject("_6154a13b5a3e7c9bff550b0aa880ff2b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _62b2cd3e8e514cb69006be0df908d046 {
             get {
                 object obj = ResourceManager.GetObject("_62b2cd3e8e514cb69006be0df908d046", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6f1a9f9d0b98384d9ae0e57c1428e67f {
+            get {
+                object obj = ResourceManager.GetObject("_6f1a9f9d0b98384d9ae0e57c1428e67f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +273,39 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap safsadfsadfdsafsda {
+            get {
+                object obj = ResourceManager.GetObject("safsadfsadfdsafsda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_05_20_074522 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_05_20_074522", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_05_21_223143 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_05_21_223143", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_05_21_232545 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_05_21_232545", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +356,16 @@ namespace ProyectoEstructuraFinanzas.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_21_at_10_04_58_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp_Image_2024_05_21_at_10_04_58_PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_21_at_23_36_12 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024_05_21_at_23_36_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

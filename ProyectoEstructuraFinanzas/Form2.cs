@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,38 @@ namespace ProyectoEstructuraFinanzas
         public Form2()
         {
             InitializeComponent();
+            Timer timer = new Timer();
+            timer.Interval = 1000; // 1000 ms = 1 segundo
+            timer.Tick += new EventHandler(ActualizarHoraYFecha);
+            timer.Start();
+        }
+        private void ActualizarHoraYFecha(object sender, EventArgs e)
+        {
+            // Actualiza el label de la hora
+            labelHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            // Actualiza el label de la fecha
+            labelFecha.Text = CapitalizeFirstLetter(DateTime.Now.ToString("dddd, MMMM dd, yyyy", new CultureInfo("es-ES")));
         }
 
+        private string CapitalizeFirstLetter(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            string[] words = input.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length > 1)
+                {
+                    words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
+                }
+                else if (words[i].Length == 1)
+                {
+                    words[i] = words[i].ToUpper();
+                }
+            }
+            return string.Join(" ", words);
+        }
         private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -33,18 +64,16 @@ namespace ProyectoEstructuraFinanzas
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            if(!bunifuCards2.Visible)
-            {
-                guna2Transition1.ShowSync(bunifuCards2);
+            //if(!bunifuCards2.Visible)
+            //{
+            //    guna2Transition1.ShowSync(bunifuCards2);
              
-
-
-            }
-            else
-            {
-                guna2Transition1.HideSync(bunifuCards2);
+            //}
+            //else
+            //{
+            //    guna2Transition1.HideSync(bunifuCards2);
             
-            }
+            //}
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)
@@ -74,6 +103,16 @@ namespace ProyectoEstructuraFinanzas
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             openChildForm(new Seguimiento());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelHijo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
