@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,11 +14,15 @@ namespace ProyectoEstructuraFinanzas
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string currentUser;
+
+        public Form2(string user)
         {
             InitializeComponent();
+            currentUser = user;
+
             //labelHora.BackColor = Color.Transparent;
-                      
+
             //Timer timer = new Timer();
             //timer.Interval = 1000; // 1000 ms = 1 segundo
             //timer.Tick += new EventHandler(ActualizarHoraYFecha);
@@ -99,7 +104,8 @@ namespace ProyectoEstructuraFinanzas
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Registrar());
+            var userFilePath = GetUserFilePath(currentUser);
+            openChildForm(new Registrar(userFilePath));
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -120,6 +126,10 @@ namespace ProyectoEstructuraFinanzas
         private void guna2Button4_Click(object sender, EventArgs e)
         {
 
+        }
+        private string GetUserFilePath(string username)
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
         }
     }
 }

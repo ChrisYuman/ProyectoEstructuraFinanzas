@@ -14,8 +14,10 @@ namespace ProyectoEstructuraFinanzas
 {
     public partial class Form1 : Form
     {
-        private const string FilePath = "users.json";
+        private const string UserFilePath = "users.json";
         private Dictionary<string, string> users;
+        private string currentUser;
+
         public Form1()
         {
 
@@ -25,15 +27,20 @@ namespace ProyectoEstructuraFinanzas
         }
         private void CargarUsuarios()
         {
-            if (File.Exists(FilePath))
+            if (File.Exists(UserFilePath))
             {
-                var json = File.ReadAllText(FilePath);
+                var json = File.ReadAllText(UserFilePath);
                 users = JsonConvert.DeserializeObject<Dictionary<string, string>>(json) ?? new Dictionary<string, string>();
             }
             else
             {
                 users = new Dictionary<string, string>();
             }
+        }
+        private void SaveUsers()
+        {
+            var json = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText(UserFilePath, json);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -58,15 +65,14 @@ namespace ProyectoEstructuraFinanzas
 
             if (users.ContainsKey(username) && users[username] == password)
             {
-                MessageBox.Show("Inicio de sesion exitoso");
-                var mForm2 = new Form2();
-                mForm2.Show();
+                currentUser = username;
                 this.Hide();
-
+                var form2 = new Form2(username);
+                form2.Show();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecta.");
+                MessageBox.Show("Usuario o contraseña incorrectos");
             }
 
         }
@@ -88,6 +94,10 @@ namespace ProyectoEstructuraFinanzas
             //cerrar la aplicacion
             Application.Exit();
 
+        }
+        private string GetUserFilePath(string username)
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
         }
     }
 }

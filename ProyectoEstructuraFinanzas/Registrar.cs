@@ -3,19 +3,46 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using static ProyectoEstructuraFinanzas.Form3;
 
 namespace ProyectoEstructuraFinanzas
 {
     public partial class Registrar : Form
     {
-        public Registrar()
+        private string _userFilePath;
+        private UsuarioData _usuarioData;
+
+        public Registrar(string userFilePath)
         {
             InitializeComponent();
+            _userFilePath = userFilePath;
         }
 
         private void Registrar_Load(object sender, EventArgs e)
         {
-            // Inicializar categorías
+            if (!File.Exists(_userFilePath))
+            {
+                _usuarioData = new UsuarioData();
+                using (var presupuestoForm = new PresupuestoForm(_userFilePath, _usuarioData.Presupuesto))
+                {
+                    if (presupuestoForm.ShowDialog() == DialogResult.OK)
+                    {
+                        _usuarioData.Presupuesto = presupuestoForm.Presupuesto;
+                        GuardarUsuarioData();
+                    }
+                    else
+                    {
+                        this.Close();
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                var jsonData = File.ReadAllText(_userFilePath);
+                _usuarioData = JsonConvert.DeserializeObject<UsuarioData>(jsonData);
+            }
+
             InicializarCategorias();
         }
 
@@ -36,7 +63,6 @@ namespace ProyectoEstructuraFinanzas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // Validar los campos antes de guardar
             if (string.IsNullOrWhiteSpace(txtDescripcion.Text) ||
                 cmbCategoria.SelectedItem == null ||
                 string.IsNullOrWhiteSpace(txtMonto.Text) ||
@@ -46,7 +72,6 @@ namespace ProyectoEstructuraFinanzas
                 return;
             }
 
-            // Crear un nuevo registro
             var registro = new Registro
             {
                 Descripcion = txtDescripcion.Text,
@@ -55,32 +80,20 @@ namespace ProyectoEstructuraFinanzas
                 Fecha = DateTime.Now
             };
 
-            // Ruta del archivo JSON
-            string jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "registros.json");
+            _usuarioData.Registros.Add(registro);
+            _usuarioData.Presupuesto -= monto;
 
-            // Leer registros existentes
-            List<Registro> registros;
-            if (File.Exists(jsonFilePath))
-            {
-                var jsonData = File.ReadAllText(jsonFilePath);
-                registros = JsonConvert.DeserializeObject<List<Registro>>(jsonData) ?? new List<Registro>();
-            }
-            else
-            {
-                registros = new List<Registro>();
-            }
-
-            // Agregar el nuevo registro a la lista
-            registros.Add(registro);
-
-            // Guardar la lista de registros en el archivo JSON
-            var jsonString = JsonConvert.SerializeObject(registros, Formatting.Indented);
-            File.WriteAllText(jsonFilePath, jsonString);
+            GuardarUsuarioData();
 
             MessageBox.Show("Registro guardado exitosamente.");
             txtDescripcion.Clear();
-            cmbCategoria.Items.Clear();
+            cmbCategoria.SelectedItem = null;
             txtMonto.Clear();
+        }
+        private void GuardarUsuarioData()
+        {
+            var jsonString = JsonConvert.SerializeObject(_usuarioData, Formatting.Indented);
+            File.WriteAllText(_userFilePath, jsonString);
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
@@ -92,6 +105,18 @@ namespace ProyectoEstructuraFinanzas
         {
 
         }
+
+        private void btnActualizarPresupuesto_Click(object sender, EventArgs e)
+        {
+            using (var presupuestoForm = new PresupuestoForm(_userFilePath, _usuarioData.Presupuesto))
+            {
+                if (presupuestoForm.ShowDialog() == DialogResult.OK)
+                {
+                    _usuarioData.Presupuesto = presupuestoForm.Presupuesto;
+                    GuardarUsuarioData();
+                }
+            }
+        }
     }
 
     public class Registro
@@ -100,6 +125,11 @@ namespace ProyectoEstructuraFinanzas
         public string Categoria { get; set; }
         public decimal Monto { get; set; }
         public DateTime Fecha { get; set; }
+    }
+    public class UsuarioData
+    {
+        public decimal Presupuesto { get; set; }
+        public List<Registro> Registros { get; set; } = new List<Registro>();
     }
 }
 

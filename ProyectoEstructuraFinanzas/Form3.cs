@@ -72,6 +72,14 @@ namespace ProyectoEstructuraFinanzas
                 MessageBox.Show("El usuario ya existe");
             }
         }
+        private void CreateUserFile(string username)
+        {
+            var userFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
+            var userData = new UsuarioData();
+            var jsonString = JsonConvert.SerializeObject(userData, Formatting.Indented);
+            File.WriteAllText(userFilePath, jsonString);
+        }
+
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -93,6 +101,11 @@ namespace ProyectoEstructuraFinanzas
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public class UsuarioData
+        {
+            public decimal Presupuesto { get; set; }
+            public List<Registro> Registros { get; set; } = new List<Registro>();
         }
     }
 }

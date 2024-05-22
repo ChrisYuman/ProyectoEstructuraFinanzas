@@ -208,7 +208,7 @@
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

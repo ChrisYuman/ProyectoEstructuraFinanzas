@@ -26,6 +26,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnActualizarPresupuesto = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -197,6 +198,21 @@
             this.guna2PictureBox4.TabStop = false;
             this.guna2PictureBox4.UseTransparentBackground = true;
             // 
+            // btnActualizarPresupuesto
+            // 
+            this.btnActualizarPresupuesto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnActualizarPresupuesto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnActualizarPresupuesto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnActualizarPresupuesto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnActualizarPresupuesto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnActualizarPresupuesto.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarPresupuesto.Location = new System.Drawing.Point(646, 474);
+            this.btnActualizarPresupuesto.Name = "btnActualizarPresupuesto";
+            this.btnActualizarPresupuesto.Size = new System.Drawing.Size(180, 45);
+            this.btnActualizarPresupuesto.TabIndex = 11;
+            this.btnActualizarPresupuesto.Text = "Actualizar";
+            this.btnActualizarPresupuesto.Click += new System.EventHandler(this.btnActualizarPresupuesto_Click);
+            // 
             // Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,6 +221,7 @@
             this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.WhatsApp_Image_2024_05_21_at_10_04_47_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(908, 624);
+            this.Controls.Add(this.btnActualizarPresupuesto);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
@@ -237,5 +254,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2Button btnActualizarPresupuesto;
     }
 }
