@@ -27,6 +27,7 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnActualizarPresupuesto = new Guna.UI2.WinForms.Guna2Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -127,6 +128,7 @@
             this.txtMonto.Size = new System.Drawing.Size(196, 51);
             this.txtMonto.TabIndex = 5;
             this.txtMonto.TextChanged += new System.EventHandler(this.txtMonto_TextChanged);
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
             // btnGuardar
             // 
@@ -213,6 +215,13 @@
             this.btnActualizarPresupuesto.Text = "Actualizar";
             this.btnActualizarPresupuesto.Click += new System.EventHandler(this.btnActualizarPresupuesto_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(371, 417);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 12;
+            // 
             // Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -221,6 +230,7 @@
             this.BackgroundImage = global::ProyectoEstructuraFinanzas.Properties.Resources.WhatsApp_Image_2024_05_21_at_10_04_47_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(908, 624);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnActualizarPresupuesto);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
@@ -255,5 +265,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2Button btnActualizarPresupuesto;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

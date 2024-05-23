@@ -72,12 +72,15 @@ namespace ProyectoEstructuraFinanzas
                 return;
             }
 
+            // Obtener la fecha seleccionada del DateTimePicker
+            DateTime fecha = dateTimePicker1.Value;
+
             var registro = new Registro
             {
                 Descripcion = txtDescripcion.Text,
                 Categoria = cmbCategoria.SelectedItem.ToString(),
                 Monto = monto,
-                Fecha = DateTime.Now
+                Fecha = fecha // Aquí se agrega la fecha seleccionada
             };
 
             _usuarioData.Registros.Add(registro);
@@ -90,6 +93,8 @@ namespace ProyectoEstructuraFinanzas
             cmbCategoria.SelectedItem = null;
             txtMonto.Clear();
         }
+
+
         private void GuardarUsuarioData()
         {
             var jsonString = JsonConvert.SerializeObject(_usuarioData, Formatting.Indented);
@@ -98,12 +103,12 @@ namespace ProyectoEstructuraFinanzas
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
         {
-
+            // Lógica para el cambio de texto en txtDescripcion
         }
 
         private void txtMonto_TextChanged(object sender, EventArgs e)
         {
-
+            // Lógica para el cambio de texto en txtMonto
         }
 
         private void btnActualizarPresupuesto_Click(object sender, EventArgs e)
@@ -117,8 +122,26 @@ namespace ProyectoEstructuraFinanzas
                 }
             }
         }
-    }
+        private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verificar si el control que generó el evento es un TextBox
+            if (sender is TextBox textBox)
+            {
+                // Permitir solo números y el carácter de punto para decimales
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                {
+                    e.Handled = true;
+                }
 
+                // Solo permitir un punto decimal
+                if ((e.KeyChar == '.') && (textBox.Text.IndexOf('.') > -1))
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+    }
     public class Registro
     {
         public string Descripcion { get; set; }
@@ -126,10 +149,10 @@ namespace ProyectoEstructuraFinanzas
         public decimal Monto { get; set; }
         public DateTime Fecha { get; set; }
     }
+
     public class UsuarioData
     {
         public decimal Presupuesto { get; set; }
         public List<Registro> Registros { get; set; } = new List<Registro>();
     }
 }
-
