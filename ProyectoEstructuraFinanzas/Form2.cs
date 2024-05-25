@@ -110,7 +110,8 @@ namespace ProyectoEstructuraFinanzas
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Seguimiento());
+            var userFilePath = GetUserFilePath(currentUser);
+            openChildForm(new Seguimiento(userFilePath));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

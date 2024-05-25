@@ -154,5 +154,15 @@ namespace ProyectoEstructuraFinanzas
     {
         public decimal Presupuesto { get; set; }
         public List<Registro> Registros { get; set; } = new List<Registro>();
+
+        public void AgregarGasto(decimal monto, DateTime fecha, string descripcion)
+        {
+            Registros.Add(new Registro { Monto = -Math.Abs(monto), Fecha = fecha, Descripcion = descripcion });
+        }
+
+        public void AgregarIngreso(decimal monto, DateTime fecha, string descripcion)
+        {
+            Registros.Add(new Registro { Monto = Math.Abs(monto), Fecha = fecha, Descripcion = descripcion });
+        }
     }
 }
