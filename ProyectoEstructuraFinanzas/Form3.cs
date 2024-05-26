@@ -106,6 +106,8 @@ namespace ProyectoEstructuraFinanzas
         {
             public decimal Presupuesto { get; set; }
             public List<Registro> Registros { get; set; } = new List<Registro>();
+            public List<PagoRecurrente> PagosRecurrentes { get; set; } = new List<PagoRecurrente>();
+
         }
     }
 }
