@@ -55,10 +55,10 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.casa__1_;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(12, 11);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(33, 18);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(221, 46);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Inicio";
             this.guna2Button1.UseTransparentBackground = true;
@@ -74,9 +74,10 @@
             this.cmbFiltro.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbFiltro.ItemHeight = 30;
-            this.cmbFiltro.Location = new System.Drawing.Point(12, 64);
+            this.cmbFiltro.Location = new System.Drawing.Point(33, 83);
+            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(140, 36);
+            this.cmbFiltro.Size = new System.Drawing.Size(185, 36);
             this.cmbFiltro.TabIndex = 3;
             // 
             // chart1
@@ -85,13 +86,14 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 115);
+            this.chart1.Location = new System.Drawing.Point(33, 146);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(557, 222);
+            this.chart1.Size = new System.Drawing.Size(743, 273);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
@@ -103,9 +105,10 @@
             this.btnFiltrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnFiltrar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFiltrar.ForeColor = System.Drawing.Color.White;
-            this.btnFiltrar.Location = new System.Drawing.Point(209, 12);
+            this.btnFiltrar.Location = new System.Drawing.Point(296, 19);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(180, 45);
+            this.btnFiltrar.Size = new System.Drawing.Size(240, 55);
             this.btnFiltrar.TabIndex = 5;
             this.btnFiltrar.Text = "guna2Button2";
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
@@ -113,32 +116,36 @@
             // lstDetalles
             // 
             this.lstDetalles.FormattingEnabled = true;
-            this.lstDetalles.Location = new System.Drawing.Point(449, 11);
+            this.lstDetalles.ItemHeight = 16;
+            this.lstDetalles.Location = new System.Drawing.Point(616, 18);
+            this.lstDetalles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstDetalles.Name = "lstDetalles";
-            this.lstDetalles.Size = new System.Drawing.Size(120, 95);
+            this.lstDetalles.Size = new System.Drawing.Size(159, 116);
             this.lstDetalles.TabIndex = 6;
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(209, 86);
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTotal.Location = new System.Drawing.Point(293, 103);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(35, 13);
+            this.lblTotal.Size = new System.Drawing.Size(44, 16);
             this.lblTotal.TabIndex = 7;
             this.lblTotal.Text = "label1";
             // 
             // Seguimiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lstDetalles);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.guna2Button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Seguimiento";
             this.Text = "Seguimiento";
             this.Load += new System.EventHandler(this.Seguimiento_Load);

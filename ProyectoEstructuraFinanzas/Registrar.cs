@@ -75,16 +75,19 @@ namespace ProyectoEstructuraFinanzas
             // Obtener la fecha seleccionada del DateTimePicker
             DateTime fecha = dateTimePicker1.Value;
 
+            // Asegurarse de que el monto sea negativo para representar un gasto
+            monto = -Math.Abs(monto); // Cambio necesario para corregir el signo del monto
+
             var registro = new Registro
             {
                 Descripcion = txtDescripcion.Text,
                 Categoria = cmbCategoria.SelectedItem.ToString(),
-                Monto = monto,
+                Monto = monto, // Monto negativo para representar un gasto
                 Fecha = fecha // Aquí se agrega la fecha seleccionada
             };
 
             _usuarioData.Registros.Add(registro);
-            _usuarioData.Presupuesto -= monto;
+            _usuarioData.Presupuesto += monto; // Restamos el monto del presupuesto
 
             GuardarUsuarioData();
 
@@ -93,7 +96,6 @@ namespace ProyectoEstructuraFinanzas
             cmbCategoria.SelectedItem = null;
             txtMonto.Clear();
         }
-
 
         private void GuardarUsuarioData()
         {
@@ -117,11 +119,19 @@ namespace ProyectoEstructuraFinanzas
             {
                 if (presupuestoForm.ShowDialog() == DialogResult.OK)
                 {
+                    // Actualizar el presupuesto y guardar los datos
                     _usuarioData.Presupuesto = presupuestoForm.Presupuesto;
                     GuardarUsuarioData();
+
+                    // Formatear el presupuesto actualizado con el símbolo "Q"
+                    string presupuestoConQ = "Q" + _usuarioData.Presupuesto.ToString();
+
+                    // Mostrar el presupuesto actualizado en un MessageBox
+                    MessageBox.Show($"Presupuesto actual: {presupuestoConQ}");
                 }
             }
         }
+
         private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Verificar si el control que generó el evento es un TextBox

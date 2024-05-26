@@ -17,23 +17,23 @@ namespace ProyectoEstructuraFinanzas
     public partial class PresupuestoForm : Form
     {
         private string _userFilePath;
-        private decimal _presupuestoActual;
-
+        private UsuarioData _usuarioData;
 
         public decimal Presupuesto { get; private set; }
+
         public PresupuestoForm(string userFilePath, decimal presupuestoActual)
         {
             InitializeComponent();
             _userFilePath = userFilePath;
-            _presupuestoActual = presupuestoActual;
-            lblPresupuestoActual.Text = $"Presupuesto Actual: {_presupuestoActual:C}";
+            CargarUsuarioData(); // Cargar los datos del usuario al iniciar el formulario
+            lblPresupuestoActual.Text = $"Presupuesto Actual: Q{_usuarioData.Presupuesto:N2}";
         }
 
         private void btnGuardarPresupuesto_Click(object sender, EventArgs e)
         {
             if (decimal.TryParse(txtPresupuesto.Text, out decimal presupuesto))
             {
-                Presupuesto = _presupuestoActual + presupuesto;
+                Presupuesto = _usuarioData.Presupuesto + presupuesto; // Sumar al presupuesto existente
                 GuardarPresupuesto(Presupuesto);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -43,24 +43,25 @@ namespace ProyectoEstructuraFinanzas
                 MessageBox.Show("Por favor, ingresa un presupuesto válido.");
             }
         }
+
         private void GuardarPresupuesto(decimal presupuesto)
         {
-            var usuarioData = new UsuarioData { Presupuesto = presupuesto };
-            var jsonString = JsonConvert.SerializeObject(usuarioData, Formatting.Indented);
+            _usuarioData.Presupuesto = presupuesto;
+            var jsonString = JsonConvert.SerializeObject(_usuarioData, Formatting.Indented);
             File.WriteAllText(_userFilePath, jsonString);
         }
-        public class UsuarioData
-        {
-            public decimal Presupuesto { get; set; }
-            public List<Registro> Registros { get; set; } = new List<Registro>();
-        }
 
-        public class Registro
+        private void CargarUsuarioData()
         {
-            public string Descripcion { get; set; }
-            public string Categoria { get; set; }
-            public decimal Monto { get; set; }
-            public DateTime Fecha { get; set; }
+            if (File.Exists(_userFilePath))
+            {
+                var jsonData = File.ReadAllText(_userFilePath);
+                _usuarioData = JsonConvert.DeserializeObject<UsuarioData>(jsonData);
+            }
+            else
+            {
+                _usuarioData = new UsuarioData();
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

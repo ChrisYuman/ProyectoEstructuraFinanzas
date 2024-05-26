@@ -106,11 +106,12 @@ namespace ProyectoEstructuraFinanzas
                 case "Ingresos":
                     return _usuarioData.Registros.Where(r => r.Monto > 0);
                 case "Gastos":
-                    return _usuarioData.Registros.Where(r => r.Monto < 0);
+                    return _usuarioData.Registros.Where(r => r.Monto < 0); // Cambio aquí
                 default:
                     return _usuarioData.Registros;
             }
         }
+
         private void MostrarDetallesFiltrados(IEnumerable<Registro> registrosFiltrados)
         {
             lstDetalles.Items.Clear();
@@ -123,10 +124,10 @@ namespace ProyectoEstructuraFinanzas
             }
 
             lblTotal.Text = filtro == "Ingresos"
-                ? $"Total Ingresos: {registrosFiltrados.Sum(r => r.Monto):C}"
+                ? $"Total Ingresos: Q{registrosFiltrados.Sum(r => r.Monto):N2}"
                 : filtro == "Gastos"
-                ? $"Total Gastos: {registrosFiltrados.Sum(r => r.Monto):C}"
-                : $"Total: {registrosFiltrados.Sum(r => r.Monto):C}";
+                ? $"Total Gastos: Q{registrosFiltrados.Sum(r => r.Monto):N2}"
+                : $"Total: Q{registrosFiltrados.Sum(r => r.Monto):N2}";
         }
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
