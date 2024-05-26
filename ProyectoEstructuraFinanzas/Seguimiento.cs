@@ -119,7 +119,8 @@ namespace ProyectoEstructuraFinanzas
 
             foreach (var registro in registrosFiltrados)
             {
-                string itemText = $"{registro.Fecha:dd/MM/yyyy} - {registro.Descripcion}: {registro.Monto:C}";
+                // Cambia el formato de la cadena de montos para mostrarlo en Quetzales (Q)
+                string itemText = $"{registro.Fecha:dd/MM/yyyy} - {registro.Descripcion}: Q{Math.Abs(registro.Monto):N2}";
                 lstDetalles.Items.Add(itemText);
             }
 
@@ -129,9 +130,15 @@ namespace ProyectoEstructuraFinanzas
                 ? $"Total Gastos: Q{registrosFiltrados.Sum(r => r.Monto):N2}"
                 : $"Total: Q{registrosFiltrados.Sum(r => r.Monto):N2}";
         }
+
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             ActualizarChart();
+
+        }
+
+        private void lstDetalles_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

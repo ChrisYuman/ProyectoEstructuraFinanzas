@@ -309,5 +309,14 @@
   <ItemGroup>
     <None Include="Resources\registrooooo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo blanco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fecha de compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra-grafica.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

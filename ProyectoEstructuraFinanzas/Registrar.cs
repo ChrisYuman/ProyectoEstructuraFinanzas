@@ -151,6 +151,10 @@ namespace ProyectoEstructuraFinanzas
             }
         }
 
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Registro
     {
