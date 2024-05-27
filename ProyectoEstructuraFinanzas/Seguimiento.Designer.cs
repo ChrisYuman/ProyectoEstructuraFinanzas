@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.cmbFiltro = new Guna.UI2.WinForms.Guna2ComboBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnFiltrar = new Guna.UI2.WinForms.Guna2Button();
@@ -62,17 +62,17 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(256, 137);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(632, 473);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -85,7 +85,7 @@
             this.btnFiltrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFiltrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnFiltrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFiltrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnFiltrar.ForeColor = System.Drawing.Color.White;
             this.btnFiltrar.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.barra_grafica;
             this.btnFiltrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -103,7 +103,7 @@
             this.lstDetalles.BackColor = System.Drawing.Color.White;
             this.lstDetalles.FormattingEnabled = true;
             this.lstDetalles.ItemHeight = 16;
-            this.lstDetalles.Location = new System.Drawing.Point(256, 11);
+            this.lstDetalles.Location = new System.Drawing.Point(267, 13);
             this.lstDetalles.Margin = new System.Windows.Forms.Padding(4);
             this.lstDetalles.Name = "lstDetalles";
             this.lstDetalles.Size = new System.Drawing.Size(283, 116);
@@ -114,12 +114,12 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
-            this.lblTotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
             this.lblTotal.Location = new System.Drawing.Point(27, 277);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(60, 20);
+            this.lblTotal.Size = new System.Drawing.Size(53, 20);
             this.lblTotal.TabIndex = 7;
             this.lblTotal.Text = "label1";
             // 
