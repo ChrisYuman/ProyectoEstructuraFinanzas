@@ -155,6 +155,11 @@ namespace ProyectoEstructuraFinanzas
         {
 
         }
+
+        private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Registro
     {
