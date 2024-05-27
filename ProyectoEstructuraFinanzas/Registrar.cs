@@ -155,6 +155,11 @@ namespace ProyectoEstructuraFinanzas
         {
 
         }
+
+        private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Registro
     {
@@ -168,6 +173,8 @@ namespace ProyectoEstructuraFinanzas
     {
         public decimal Presupuesto { get; set; }
         public List<Registro> Registros { get; set; } = new List<Registro>();
+        public List<PagoRecurrente> PagosRecurrentes { get; set; } = new List<PagoRecurrente>();
+
 
         public void AgregarGasto(decimal monto, DateTime fecha, string descripcion)
         {

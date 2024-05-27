@@ -104,6 +104,7 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(266, 36);
             this.cmbCategoria.TabIndex = 4;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
             // txtMonto
             // 
@@ -199,7 +200,7 @@
             this.btnActualizarPresupuesto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnActualizarPresupuesto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnActualizarPresupuesto.FillColor = System.Drawing.Color.Teal;
-            this.btnActualizarPresupuesto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.btnActualizarPresupuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnActualizarPresupuesto.ForeColor = System.Drawing.Color.White;
             this.btnActualizarPresupuesto.Location = new System.Drawing.Point(669, 427);
             this.btnActualizarPresupuesto.Name = "btnActualizarPresupuesto";
@@ -211,7 +212,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HighlightText;
             this.dateTimePicker1.Location = new System.Drawing.Point(644, 280);

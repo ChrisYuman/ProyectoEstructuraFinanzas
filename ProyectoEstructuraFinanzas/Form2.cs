@@ -9,17 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ProyectoEstructuraFinanzas.Form3;
 
 namespace ProyectoEstructuraFinanzas
 {
     public partial class Form2 : Form
     {
         private string currentUser;
-
+        private UsuarioData _usuarioData;
         public Form2(string user)
         {
             InitializeComponent();
             currentUser = user;
+            _usuarioData = new UsuarioData();
 
             //labelHora.BackColor = Color.Transparent;
 
@@ -126,6 +128,8 @@ namespace ProyectoEstructuraFinanzas
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
+            var userFilePath = GetUserFilePath(currentUser);
+            openChildForm(new Planificacion(_usuarioData, userFilePath)); // Asegúrate de pasar _usuarioData
 
         }
         private string GetUserFilePath(string username)
