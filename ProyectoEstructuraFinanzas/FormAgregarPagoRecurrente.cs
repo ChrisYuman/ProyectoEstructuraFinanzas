@@ -12,6 +12,8 @@ namespace ProyectoEstructuraFinanzas
 {
     public partial class FormAgregarPagoRecurrente : Form
     {
+        public static event EventHandler OnPagoRecurrenteAdded; // Evento estático
+
         public PagoRecurrente PagoRecurrente { get; private set; }
 
         public FormAgregarPagoRecurrente()
@@ -35,9 +37,19 @@ namespace ProyectoEstructuraFinanzas
             PagoRecurrente.Descripcion = txtDescripcion.Text;
             PagoRecurrente.Monto = decimal.Parse(txtMonto.Text);
             PagoRecurrente.FechaInicio = dateTimePicker1.Value;
-            PagoRecurrente.IntervaloDias = int.Parse(txtIntervaloDias.Text);
+            PagoRecurrente.IntervaloMeses = int.Parse(txtIntervaloDias.Text);
+
+            // Calcular la fecha del primer pago
+            PagoRecurrente.FechaPago = CalcularFechaProximoPago(PagoRecurrente.FechaInicio, PagoRecurrente.IntervaloMeses);
+            OnPagoRecurrenteAdded?.Invoke(this, EventArgs.Empty);
+
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+        private DateTime CalcularFechaProximoPago(DateTime fechaInicio, int intervaloMeses)
+        {
+            DateTime fechaPago = fechaInicio.AddMonths(intervaloMeses);
+            return fechaPago;
         }
     }
 }

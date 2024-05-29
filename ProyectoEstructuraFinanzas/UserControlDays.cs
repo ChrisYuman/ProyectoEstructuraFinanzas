@@ -31,5 +31,6 @@ namespace ProyectoEstructuraFinanzas
             expenseControl.SetExpense(description, amount);
             this.Controls.Add(expenseControl); // Agrega el control de gasto al día
         }
+
     }
 }

@@ -18,6 +18,8 @@ namespace ProyectoEstructuraFinanzas
     {
         int month, year;
         private string currentUser;
+        private string userFilePath;
+
         public Planificacion(string userFilePath, string currentUser)
         {
             InitializeComponent();
@@ -25,12 +27,15 @@ namespace ProyectoEstructuraFinanzas
             DateTime now = DateTime.Now;
             month = now.Month;
             year = now.Year;
+            this.userFilePath = userFilePath;
+
+            FormAgregarPagoRecurrente.OnPagoRecurrenteAdded += FormAgregarPagoRecurrente_OnPagoRecurrenteAdded;
 
         }
-       
 
-        
-      
+
+
+
         private void Planificacion_Load(object sender, EventArgs e)
         {
             displayDays();
@@ -75,7 +80,16 @@ namespace ProyectoEstructuraFinanzas
                         ucdays.AddExpense(registro.Descripcion, registro.Monto);
                     }
                 }
+                foreach (var pagoRecurrente in usuarioData.PagosRecurrentes)
+                {
+                    // Calcular la fecha de pago esperada para este mes
+                    DateTime fechaPagoEsperada = pagoRecurrente.FechaInicio.AddMonths(i - 1); // i-1 porque i es el día del mes actual
 
+                    if (fechaPagoEsperada.Day == i) // Verifica si es el día de pago del mes actual
+                    {
+                        ucdays.AddExpense(pagoRecurrente.Descripcion, pagoRecurrente.Monto);
+                    }
+                }
                 daycontainer.Controls.Add(ucdays);
             }
 
@@ -86,9 +100,9 @@ namespace ProyectoEstructuraFinanzas
             {
                 UserControlBlank ucblak = new UserControlBlank();
                 daycontainer.Controls.Add(ucblak);
-            
-        
-    }
+
+
+            }
         }
         private UsuarioData CargarUsuarioData(string filePath)
         {
@@ -133,6 +147,41 @@ namespace ProyectoEstructuraFinanzas
             displayDays();
         }
 
+        private void btnAgregarPagoRecurrente_Click(object sender, EventArgs e)
+        {
+            using (var formAgregarPagoRecurrente = new FormAgregarPagoRecurrente())
+    {
+        if (formAgregarPagoRecurrente.ShowDialog() == DialogResult.OK)
+        {
+            // Obtener el pago recurrente del formulario
+            PagoRecurrente pagoRecurrente = formAgregarPagoRecurrente.PagoRecurrente;
+
+            // Aquí puedes trabajar con pagoRecurrente, por ejemplo, mostrarlo en el calendario, etc.
+            // No necesitas acceder a propiedades o métodos que no existen en FormAgregarPagoRecurrente.
+
+            // Luego de trabajar con el pago recurrente, podrías guardar los datos del usuario si es necesario.
+            // Ejemplo:
+            var userFilePath = GetUserFilePath(currentUser);
+            UsuarioData usuarioData = CargarUsuarioData(userFilePath);
+
+            usuarioData.AgregarPagoRecurrente(pagoRecurrente);
+            GuardarUsuarioData(usuarioData, userFilePath);
+
+            // Actualizar la vista de días
+            displayDays();
+        }
+            }
+        }
+        private void GuardarUsuarioData(UsuarioData usuarioData, string filePath)
+        {
+            var jsonString = JsonConvert.SerializeObject(usuarioData, Formatting.Indented);
+            File.WriteAllText(filePath, jsonString);
+        }
+        private void FormAgregarPagoRecurrente_OnPagoRecurrenteAdded(object sender, EventArgs e)
+        {
+            // Método manejador llamado cuando se agrega un pago recurrente desde FormAgregarPagoRecurrente
+            displayDays();
+        }
         private void btnnext_Click(object sender, EventArgs e)
         {
             // Sumar un mes y actualizar la visualización

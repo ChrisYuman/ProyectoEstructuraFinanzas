@@ -11,7 +11,7 @@ namespace ProyectoEstructuraFinanzas
         public string Descripcion { get; set; }
         public decimal Monto { get; set; }
         public DateTime FechaInicio { get; set; }
-        public int IntervaloDias { get; set; }
+        public int IntervaloMeses { get; set; } // Nuevo: Intervalo en meses
         public DateTime FechaPago { get; set; }
     }
 }

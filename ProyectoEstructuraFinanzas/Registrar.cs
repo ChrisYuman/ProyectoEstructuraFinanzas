@@ -185,5 +185,9 @@ namespace ProyectoEstructuraFinanzas
         {
             Registros.Add(new Registro { Monto = Math.Abs(monto), Fecha = fecha, Descripcion = descripcion });
         }
+        public void AgregarPagoRecurrente(PagoRecurrente pagoRecurrente)
+        {
+            PagosRecurrentes.Add(pagoRecurrente);
+        }
     }
 }
