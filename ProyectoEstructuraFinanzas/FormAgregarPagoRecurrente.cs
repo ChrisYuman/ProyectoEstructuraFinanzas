@@ -45,6 +45,17 @@ namespace ProyectoEstructuraFinanzas
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+
+            string destinatario = "finanzasproc@gmail.com"; // Cambiar con el correo del usuario
+            string asunto = "Recordatorio de pago recurrente";
+            string cuerpo = $"Recuerda realizar el pago de {PagoRecurrente.Descripcion} por un monto de {PagoRecurrente.Monto}Q el día {PagoRecurrente.FechaPago.ToShortDateString()}.";
+            EmailSender.SendPaymentReminder(destinatario, asunto, cuerpo);
+
+            OnPagoRecurrenteAdded?.Invoke(this, EventArgs.Empty);
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+
         }
         private DateTime CalcularFechaProximoPago(DateTime fechaInicio, int intervaloMeses)
         {
@@ -52,4 +63,5 @@ namespace ProyectoEstructuraFinanzas
             return fechaPago;
         }
     }
+
 }

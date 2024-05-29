@@ -106,6 +106,7 @@
     <Compile Include="DetallesForm.Designer.cs">
       <DependentUpon>DetallesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmailSender.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
