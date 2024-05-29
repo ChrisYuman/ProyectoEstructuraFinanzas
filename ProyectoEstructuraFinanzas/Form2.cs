@@ -129,7 +129,7 @@ namespace ProyectoEstructuraFinanzas
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             var userFilePath = GetUserFilePath(currentUser);
-            openChildForm(new Planificacion(_usuarioData, userFilePath)); // Asegúrate de pasar _usuarioData
+            openChildForm(new Planificacion()); // Asegúrate de pasar _usuarioData
 
         }
         private string GetUserFilePath(string username)
