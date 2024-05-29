@@ -113,6 +113,7 @@
       <DependentUpon>DetallesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EmailSender.cs" />
+    <Compile Include="EncryptionHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +138,7 @@
     <Compile Include="FormAgregarPagoRecurrente.Designer.cs">
       <DependentUpon>FormAgregarPagoRecurrente.cs</DependentUpon>
     </Compile>
+    <Compile Include="HashingHelper.cs" />
     <Compile Include="Metas.cs">
       <SubType>Form</SubType>
     </Compile>

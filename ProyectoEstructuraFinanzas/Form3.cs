@@ -17,12 +17,13 @@ namespace ProyectoEstructuraFinanzas
     {
         private const string FilePath = "users.json";
         private Dictionary<string, string> users;
+
         public Form3()
         {
             InitializeComponent();
             LoadUsers();
-
         }
+
         private void LoadUsers()
         {
             if (File.Exists(FilePath))
@@ -41,9 +42,9 @@ namespace ProyectoEstructuraFinanzas
             var json = JsonConvert.SerializeObject(users, Formatting.Indented);
             File.WriteAllText(FilePath, json);
         }
+
         private void Form3_Load(object sender, EventArgs e)
         {
-
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -60,7 +61,9 @@ namespace ProyectoEstructuraFinanzas
 
             if (!users.ContainsKey(username))
             {
-                users.Add(username, password);
+                // Encriptar la contraseña antes de almacenarla
+                var hashedPassword = HashingHelper.HashPassword(password);
+                users.Add(username, hashedPassword);
                 SaveUsers();
                 MessageBox.Show("Usuario Registrado Exitosamente");
                 this.Close();
@@ -72,6 +75,7 @@ namespace ProyectoEstructuraFinanzas
                 MessageBox.Show("El usuario ya existe");
             }
         }
+
         private void CreateUserFile(string username)
         {
             var userFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
@@ -79,7 +83,6 @@ namespace ProyectoEstructuraFinanzas
             var jsonString = JsonConvert.SerializeObject(userData, Formatting.Indented);
             File.WriteAllText(userFilePath, jsonString);
         }
-
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -90,24 +93,21 @@ namespace ProyectoEstructuraFinanzas
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
-
         }
+
         public class UsuarioData
         {
             public decimal Presupuesto { get; set; }
             public List<Registro> Registros { get; set; } = new List<Registro>();
             public List<PagoRecurrente> PagosRecurrentes { get; set; } = new List<PagoRecurrente>();
-
         }
     }
 }
