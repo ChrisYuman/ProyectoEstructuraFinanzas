@@ -25,12 +25,17 @@ namespace ProyectoEstructuraFinanzas
         {
             lbdays.Text = numday+"";
         }
-        public void AddExpense(string description, decimal amount)
+        public void AddExpense(string descripcion, decimal monto)
         {
-            UserControlBlank expenseControl = new UserControlBlank();
-            expenseControl.SetExpense(description, amount);
-            this.Controls.Add(expenseControl); // Agrega el control de gasto al día
-        }
+            // Formatear el monto con el símbolo de moneda de Guatemala
+            string montoFormateado = $"Q{monto:N2}";
 
+            // Lógica para agregar el gasto con la descripción y el monto formateado
+            // Por ejemplo, podrías agregar un Label o algún otro control visual
+            Label lblGasto = new Label();
+            lblGasto.Text = $"{descripcion}: {montoFormateado}";
+            lblGasto.AutoSize = true;
+            this.Controls.Add(lblGasto);
+        }
     }
 }

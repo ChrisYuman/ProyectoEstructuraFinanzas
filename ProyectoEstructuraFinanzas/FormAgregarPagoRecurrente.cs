@@ -62,6 +62,11 @@ namespace ProyectoEstructuraFinanzas
             DateTime fechaPago = fechaInicio.AddMonths(intervaloMeses);
             return fechaPago;
         }
+
+        private void lblIntervaloDias_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
