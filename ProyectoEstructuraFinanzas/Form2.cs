@@ -26,9 +26,6 @@ namespace ProyectoEstructuraFinanzas
             InitializeComponent();
             currentUser = user;
             _usuarioData = new UsuarioData();
-
-            // Agregar el controlador de eventos para el botón btnGenrepor
-            btnGenrepor.Click += btnGenrepor_Click;
         }
 
         private void btnGenrepor_Click(object sender, EventArgs e)
@@ -78,6 +75,21 @@ namespace ProyectoEstructuraFinanzas
             {
                 Paragraph pagoRecurrente = new Paragraph($"{pago.FechaInicio.ToString("dd/MM/yyyy")}: {pago.Descripcion} - ${pago.Monto} cada {pago.IntervaloMeses} meses", textFont);
                 doc.Add(pagoRecurrente);
+            }
+
+            doc.Add(Chunk.NEWLINE);
+
+            // Agregar subtítulo de gráficas
+            Paragraph graficasTitle = new Paragraph("- Gráfica:", sectionFont);
+            doc.Add(graficasTitle);
+
+            // Agregar las gráficas desde Seguimiento.cs
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                Seguimiento seguimientoForm = new Seguimiento(GetUserFilePath(currentUser));
+                seguimientoForm.GuardarGraficasComoImagen(memoryStream);
+                iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(memoryStream.ToArray());
+                doc.Add(image);
             }
 
             doc.Close();
@@ -164,6 +176,11 @@ namespace ProyectoEstructuraFinanzas
         private string GetUserFilePath(string username)
         {
             return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
+        }
+
+        private void btnGenrepor_Click_1(object sender, EventArgs e)
+        {
+            GenerarReportePDF();
         }
     }
 }

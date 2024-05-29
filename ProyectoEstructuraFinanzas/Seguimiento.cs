@@ -25,19 +25,18 @@ namespace ProyectoEstructuraFinanzas
             InicializarChart();
             InicializarFiltros();  // Asegúrate de inicializar los filtros aquí
             ActualizarChart();
-
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
 
         private void Seguimiento_Load(object sender, EventArgs e)
         {
 
         }
+
         private void InicializarFiltros()
         {
             cmbFiltro.Items.Add("Todos");
@@ -45,6 +44,7 @@ namespace ProyectoEstructuraFinanzas
             cmbFiltro.Items.Add("Gastos");
             cmbFiltro.SelectedIndex = 0;
         }
+
         private void CargarDatosUsuario()
         {
             if (File.Exists(_userFilePath))
@@ -57,6 +57,7 @@ namespace ProyectoEstructuraFinanzas
                 _usuarioData = new UsuarioData();
             }
         }
+
         private void InicializarChart()
         {
             chart1.Series.Clear();
@@ -64,6 +65,7 @@ namespace ProyectoEstructuraFinanzas
             ChartArea chartArea = new ChartArea();
             chart1.ChartAreas.Add(chartArea);
         }
+
         private void ActualizarChart()
         {
             if (_usuarioData == null)
@@ -93,6 +95,7 @@ namespace ProyectoEstructuraFinanzas
 
             MostrarDetallesFiltrados(registrosFiltrados);
         }
+
         private IEnumerable<Registro> FiltrarRegistros()
         {
             if (_usuarioData?.Registros == null)
@@ -134,7 +137,11 @@ namespace ProyectoEstructuraFinanzas
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             ActualizarChart();
+        }
 
+        public void GuardarGraficasComoImagen(MemoryStream memoryStream)
+        {
+            chart1.SaveImage(memoryStream, ChartImageFormat.Png);
         }
 
         private void lstDetalles_SelectedIndexChanged(object sender, EventArgs e)
