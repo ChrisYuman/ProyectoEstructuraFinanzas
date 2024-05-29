@@ -138,6 +138,12 @@
     <Compile Include="FormAgregarPagoRecurrente.Designer.cs">
       <DependentUpon>FormAgregarPagoRecurrente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMetas.Designer.cs">
+      <DependentUpon>FormMetas.cs</DependentUpon>
+    </Compile>
     <Compile Include="HashingHelper.cs" />
     <Compile Include="Metas.cs">
       <SubType>Form</SubType>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgregarPagoRecurrente.resx">
       <DependentUpon>FormAgregarPagoRecurrente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMetas.resx">
+      <DependentUpon>FormMetas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metas.resx">
       <DependentUpon>Metas.cs</DependentUpon>

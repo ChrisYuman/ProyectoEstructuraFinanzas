@@ -182,5 +182,17 @@ namespace ProyectoEstructuraFinanzas
         {
             GenerarReportePDF();
         }
+
+        private void btnMetas_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMetas_Click_1(object sender, EventArgs e)
+        {
+            // Abre el formulario de metas
+            var userFilePath = GetUserFilePath(currentUser);
+            openChildForm(new FormMetas(userFilePath));
+        }
     }
 }
