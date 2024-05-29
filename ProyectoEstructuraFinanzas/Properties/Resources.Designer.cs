@@ -293,6 +293,16 @@ namespace ProyectoEstructuraFinanzas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap formulario_de_llenado__1_ {
+            get {
+                object obj = ResourceManager.GetObject("formulario_de_llenado__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap giphy_instagram__3_ {
             get {
                 object obj = ResourceManager.GetObject("giphy_instagram__3_", resourceCulture);
@@ -336,6 +346,16 @@ namespace ProyectoEstructuraFinanzas.Properties {
         internal static System.Drawing.Bitmap monto {
             get {
                 object obj = ResourceManager.GetObject("monto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap objetivo {
+            get {
+                object obj = ResourceManager.GetObject("objetivo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

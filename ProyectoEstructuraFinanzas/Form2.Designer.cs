@@ -33,6 +33,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -55,6 +57,8 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button7);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button3);
@@ -66,11 +70,59 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DarkCyan;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(166, 526);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderRadius = 8;
+            this.guna2Transition1.SetDecoration(this.guna2Button5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.formulario_de_llenado__1_;
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.Location = new System.Drawing.Point(0, 322);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button5.TabIndex = 8;
+            this.guna2Button5.Text = "Generar Reporte";
+            this.guna2Button5.UseTransparentBackground = true;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Transition1.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.objetivo;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 281);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(166, 37);
+            this.guna2Button1.TabIndex = 7;
+            this.guna2Button1.Text = "Metas";
+            this.guna2Button1.UseTransparentBackground = true;
             // 
             // guna2Button7
             // 
@@ -89,7 +141,7 @@
             this.guna2Button7.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.cerrar_sesion;
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.Location = new System.Drawing.Point(0, 453);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(166, 37);
             this.guna2Button7.TabIndex = 6;
@@ -114,7 +166,7 @@
             this.guna2Button4.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.usuario__1_;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.Location = new System.Drawing.Point(0, 240);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(166, 37);
             this.guna2Button4.TabIndex = 3;
@@ -139,7 +191,7 @@
             this.guna2Button3.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.grafico_de_barras__1_;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(0, 198);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(166, 37);
             this.guna2Button3.TabIndex = 2;
@@ -164,7 +216,7 @@
             this.guna2Button2.Image = global::ProyectoEstructuraFinanzas.Properties.Resources.verificar;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Location = new System.Drawing.Point(0, 157);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(166, 37);
             this.guna2Button2.TabIndex = 1;
@@ -177,7 +229,7 @@
             this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(166, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(684, 11);
             this.guna2Panel2.TabIndex = 2;
@@ -187,7 +239,7 @@
             this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.Location = new System.Drawing.Point(166, 515);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(684, 11);
             this.guna2Panel3.TabIndex = 3;
@@ -222,7 +274,7 @@
             this.guna2Transition1.SetDecoration(this.panelHijo, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelHijo.FillColor = System.Drawing.Color.Transparent;
             this.panelHijo.Location = new System.Drawing.Point(166, 11);
-            this.panelHijo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelHijo.Margin = new System.Windows.Forms.Padding(2);
             this.panelHijo.Name = "panelHijo";
             this.panelHijo.Size = new System.Drawing.Size(682, 504);
             this.panelHijo.TabIndex = 9;
@@ -269,7 +321,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Chartreuse;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
@@ -296,5 +348,7 @@
         private Guna.UI2.WinForms.Guna2Panel panelHijo;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
