@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.Mail;
+using System.Net;
 
 namespace ProyectoEstructuraFinanzas
 {
@@ -74,6 +76,47 @@ namespace ProyectoEstructuraFinanzas
             // Actualización de la interfaz de usuario y persistencia de datos
             MostrarMetasFinancieras();
             GuardarMetasFinancieras();
+            EnviarCorreoMetaFinanciera(nuevaMeta);
+
+        }
+        private void EnviarCorreoMetaFinanciera(MetaFinanciera meta)
+        {
+            // Configurar los detalles del correo
+            string destinatario = "finanzasproc@gmail.com";
+            string asunto = "Nueva Meta Financiera Agregada";
+            string cuerpoMensaje = $"Se ha agregado una nueva meta financiera:\n\n" +
+                                   $"Nombre: {meta.Nombre}\n" +
+                                   $"Monto Deseado: Q{meta.MontoDeseado}\n" +
+                                   $"Fecha Objetivo: {meta.FechaObjetivo.ToShortDateString()}";
+
+            // Configurar el cliente SMTP
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587)
+            {
+                Credentials = new NetworkCredential("finanzasproc@gmail.com", "aaup mrzl yzjs egtt"),
+                EnableSsl = true
+            };
+
+            // Crear el mensaje de correo
+            MailMessage mailMessage = new MailMessage
+            {
+                From = new MailAddress("finanzasproc@gmail.com"),
+                Subject = asunto,
+                Body = cuerpoMensaje,
+                IsBodyHtml = false
+            };
+
+            mailMessage.To.Add(destinatario);
+
+            try
+            {
+                // Enviar el correo
+                smtpClient.Send(mailMessage);
+                MessageBox.Show("Correo electrónico enviado exitosamente.", "Correo Enviado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al enviar correo electrónico: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 
