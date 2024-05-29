@@ -99,5 +99,25 @@ namespace ProyectoEstructuraFinanzas
         {
             return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
