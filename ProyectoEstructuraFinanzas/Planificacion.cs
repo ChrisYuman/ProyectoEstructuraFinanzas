@@ -11,15 +11,20 @@ using System.IO;
 using Newtonsoft.Json;
 using static ProyectoEstructuraFinanzas.Form3;
 using System.Globalization;
+using static ProyectoEstructuraFinanzas.Registrar;
 namespace ProyectoEstructuraFinanzas
 {
     public partial class Planificacion : Form
     {
         int month, year;
-        public Planificacion()
+        private string currentUser;
+        public Planificacion(string userFilePath, string currentUser)
         {
             InitializeComponent();
-            
+            this.currentUser = currentUser;
+            DateTime now = DateTime.Now;
+            month = now.Month;
+            year = now.Year;
 
         }
        
@@ -32,31 +37,77 @@ namespace ProyectoEstructuraFinanzas
         }
         private void displayDays()
         {
-            DateTime now = DateTime.Now;
-            month = now.Month;
-            year = now.Year;
-
+            DateTime now = new DateTime(year, month, 1); // Usa el año y mes actuales en lugar de DateTime.Now
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
-            int dayofweek = Convert.ToInt32 (startofthemonth.DayOfWeek.ToString("d")) + 1;
+            int dayofweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
+
+            // Limpiar el contenedor de días antes de volver a agregar los controles
+            daycontainer.Controls.Clear();
+
+            // Cargar datos del usuario
+            var userFilePath = GetUserFilePath(currentUser);
+            UsuarioData usuarioData = CargarUsuarioData(userFilePath);
+
+            // Llenar los días vacíos antes del inicio del mes
             for (int i = 1; i < dayofweek; i++)
             {
                 UserControlBlank ucblak = new UserControlBlank();
                 daycontainer.Controls.Add(ucblak);
             }
+
+            // Llenar los días del mes
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucday = new UserControlDays();
-                ucday.days(i);
-                daycontainer.Controls.Add(ucday);
+                UserControlDays ucdays = new UserControlDays();
+                ucdays.days(i);
+
+                // Filtrar los registros para el día actual
+                var registrosDelDia = usuarioData.Registros.Where(r => r.Fecha.Day == i && r.Fecha.Month == month && r.Fecha.Year == year).ToList();
+
+                if (registrosDelDia.Count > 0)
+                {
+                    foreach (var registro in registrosDelDia)
+                    {
+                        ucdays.AddExpense(registro.Descripcion, registro.Monto);
+                    }
+                }
+
+                daycontainer.Controls.Add(ucdays);
+            }
+
+            // Llenar los días vacíos después del final del mes
+            int totalControls = daycontainer.Controls.Count;
+            int remainingDays = 42 - totalControls; // Asumiendo una cuadrícula de 6x7 (6 semanas)
+            for (int i = 0; i < remainingDays; i++)
+            {
+                UserControlBlank ucblak = new UserControlBlank();
+                daycontainer.Controls.Add(ucblak);
+            
+        
+    }
+        }
+        private UsuarioData CargarUsuarioData(string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                var jsonData = File.ReadAllText(filePath);
+                return JsonConvert.DeserializeObject<UsuarioData>(jsonData);
+            }
+            else
+            {
+                return new UsuarioData();
             }
         }
-      
+        private string GetUserFilePath(string username)
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"{username}_data.json");
+        }
 
-       
+
         private void calendarGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
@@ -69,46 +120,32 @@ namespace ProyectoEstructuraFinanzas
 
         private void btnprevious_Click(object sender, EventArgs e)
         {
-            daycontainer.Controls.Clear();
-            month--;
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + " " + year;
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-            int dayofweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            for (int i = 1; i < dayofweek; i++)
+            // Restar un mes y actualizar la visualización
+            if (month == 1)
             {
-                UserControlBlank ucblak = new UserControlBlank();
-                daycontainer.Controls.Add(ucblak);
+                month = 12;
+                year--;
             }
-            for (int i = 1; i <= days; i++)
+            else
             {
-                UserControlDays ucday = new UserControlDays();
-                ucday.days(i);
-                daycontainer.Controls.Add(ucday);
+                month--;
             }
+            displayDays();
         }
 
         private void btnnext_Click(object sender, EventArgs e)
         {
-            daycontainer.Controls.Clear();
-            month++;
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + " " + year;
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-            int dayofweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            for (int i = 1; i < dayofweek; i++)
+            // Sumar un mes y actualizar la visualización
+            if (month == 12)
             {
-                UserControlBlank ucblak = new UserControlBlank();
-                daycontainer.Controls.Add(ucblak);
+                month = 1;
+                year++;
             }
-            for (int i = 1; i <= days; i++)
+            else
             {
-                UserControlDays ucday = new UserControlDays();
-                ucday.days(i);
-                daycontainer.Controls.Add(ucday);
+                month++;
             }
+            displayDays();
         }
     }
 

@@ -16,5 +16,17 @@ namespace ProyectoEstructuraFinanzas
         {
             InitializeComponent();
         }
+        public void SetExpense(string categoria, decimal monto)
+        {
+
+            lbl.Text = $"{categoria}: {monto:C}";
+            lbl.AutoSize = true;
+            this.Controls.Add(lbl);
+        }
+
+        private void UserControlBlank_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

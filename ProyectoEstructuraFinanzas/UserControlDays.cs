@@ -25,5 +25,11 @@ namespace ProyectoEstructuraFinanzas
         {
             lbdays.Text = numday+"";
         }
+        public void AddExpense(string description, decimal amount)
+        {
+            UserControlBlank expenseControl = new UserControlBlank();
+            expenseControl.SetExpense(description, amount);
+            this.Controls.Add(expenseControl); // Agrega el control de gasto al día
+        }
     }
 }
